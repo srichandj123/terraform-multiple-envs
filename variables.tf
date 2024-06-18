@@ -10,9 +10,9 @@ variable "rgname" {
 variable "env" {
   type = string
 }
-variable "tags" {
-  type = map(string)
-  default = {
-    "Client" = "OCC"
-  }
-}
+# variable "tags" {
+#   type = map(string)
+#   default = {
+#     "Client" = "OCC"
+#   }
+# }

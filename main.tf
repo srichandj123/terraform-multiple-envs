@@ -2,5 +2,8 @@
 resource "azurerm_resource_group" "this" {
   name     = local.rgname
   location = var.location
-  tags     = var.tags
+  tags = {
+    Client      = "OCC"
+    Environment = "${var.env}"
+  }
 }
