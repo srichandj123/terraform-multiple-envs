@@ -3,7 +3,8 @@ variable "location" {
   default = "Central US"
 }
 variable "rgname" {
-  type = string
+  type    = string
+  default = "multi"
 }
 
 variable "env" {
