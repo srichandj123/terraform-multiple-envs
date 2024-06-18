@@ -3,11 +3,16 @@ variable "location" {
   default = "Central US"
 }
 variable "rgname" {
-  type = string
+  type    = string
+  default = "multi"
 }
-variable "tags" {
-  type = map(string)
-}
+
 variable "env" {
   type = string
 }
+# variable "tags" {
+#   type = map(string)
+#   default = {
+#     "Client" = "OCC"
+#   }
+# }

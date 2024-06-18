@@ -1,3 +1,3 @@
 locals {
-  rgname = "multienv-cicd-${env}"
+  rgname = "multienv_cicd_${var.env}"
 }
