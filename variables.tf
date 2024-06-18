@@ -10,6 +10,9 @@ variable "rgname" {
 variable "env" {
   type = string
 }
+variable "addrspace" {
+  type = list(string)
+}
 # variable "tags" {
 #   type = map(string)
 #   default = {
