@@ -1,3 +1,4 @@
 locals {
-  rgname = "multienv-cicd-${env}"
+  rgname      = "multienv-cicd-{var.env}"
+  Environment = "multi-terraform-{var.env}"
 }

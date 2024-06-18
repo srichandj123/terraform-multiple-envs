@@ -5,13 +5,14 @@ variable "location" {
 variable "rgname" {
   type = string
 }
+
+variable "env" {
+  type = string
+}
 variable "tags" {
   type = map(string)
   default = {
     "Client"      = "OCC"
-    "Environment" = "${env}"
+    "Environment" = "{var.env}"
   }
-}
-variable "env" {
-  type = string
 }
