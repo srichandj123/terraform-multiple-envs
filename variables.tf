@@ -13,7 +13,6 @@ variable "env" {
 variable "tags" {
   type = map(string)
   default = {
-    "Client"      = "OCC"
-    "Environment" = "{local.environment}"
+    "Client" = "OCC"
   }
 }
